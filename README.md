@@ -2,7 +2,7 @@
 
 A testcase for svg.js with polyfill for es6 / es7 proposals.
 
-In this specific SVG.js animations does not work with `String.at()` polyfill
+In this specific case SVG.js animations does not work with `String.at()` polyfill
 
 ## Installation
 
