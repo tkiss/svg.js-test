@@ -1,18 +1,18 @@
 {
   "name": "svg.js-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.html",
   "author": "Tamás Kiss",
   "license": "",
   "repository": {
     "type": "git",
-    "url": "git@git.tamas-kiss.com"
+    "url": "https://github.com/tkiss/svg.js-test.git"
   },
   "scripts": {
-    "dist": "npm run dist-jade && npm run dist-js",
-    "dist-dir": "mkdir -p ./dist",
-    "dist-jade": "npm run dist-dir & jade ./src --out ./dist",
+    "dist": "npm run dist-dir && npm run dist-jade && npm run dist-js",
+    "dist-dir": "mkdirp ./dist",
+    "dist-jade": "jade ./src --out ./dist",
     "dist-js": "webpack --display-error-details --config ./config/webpack.base.config.js"
   },
   "dependencies": {
@@ -27,6 +27,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "clean-webpack-plugin": "^0.1.9",
     "jade": "^1.11.0",
+    "mkdirp": "^0.5.1",
     "webpack": "^1.13.1",
     "webpack-config": "^5.1.0"
   }
