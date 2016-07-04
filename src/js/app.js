@@ -5,8 +5,11 @@ import SVGTest from './SVG';
 
 $( document ).ready( () => {
 
-  console.log( 'asdf'.at( 0 ) );
-
+  // With polyfill you can use String.at()
+  if ( console && console.log ) {
+    console.log( 'Test'.at( 0 ) );
+  }
+  
   const svgTest = new SVGTest()
   svgTest.init();
 

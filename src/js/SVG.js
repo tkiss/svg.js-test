@@ -9,6 +9,7 @@ class SVGTest {
 
     this.triangle = this.svg.select( '[id*=triangle]' ).first();
 
+    // Width polyfill this does not work currently
     this.triangle.animate( 2000, '>', 5000 ).opacity( 0 );
   }
 
